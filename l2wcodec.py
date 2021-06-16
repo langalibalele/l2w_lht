@@ -20,8 +20,8 @@ BROKER = "mosquitto"  #"127.0.0.1"
 #BROKER = "127.0.0.1"
 MQTT_PORT = 1883
 MQTT_KEEPALIVE_INTERVAL = 45
-#MQTT_TOPIC1 = "application/+/device/+/rx"
-MQTT_TOPIC2 = "application/+/device/+/event/up"
+MQTT_TOPIC1 = "application/+/device/+/rx"
+#MQTT_TOPIC2 = "application/+/device/+/event/up"
 #"application/+/device/+/event/up"
 
 #TLS
@@ -41,8 +41,7 @@ client = paho.Client("client-005") #create client object client1.on_publish = on
 
 
 def main():
-    client.tls_topic1 = MQTT_TOPIC2
-    #client.tls_topic2 = MQTT_TOPIC2
+    client.tls_topic1 = MQTT_TOPIC1
     client.tls_broker = BROKER
 
     #parser = argparse.ArgumentParser()

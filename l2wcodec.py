@@ -21,8 +21,6 @@ BROKER = "mosquitto"  #"127.0.0.1"
 MQTT_PORT = 1883
 MQTT_KEEPALIVE_INTERVAL = 45
 MQTT_TOPIC1 = "application/+/device/+/rx"
-#MQTT_TOPIC2 = "application/+/device/+/event/up"
-#"application/+/device/+/event/up"
 
 #TLS
 tls_topic = threading.local()
